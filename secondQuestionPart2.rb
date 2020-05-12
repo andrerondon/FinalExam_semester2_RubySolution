@@ -3,15 +3,8 @@
 # let's go over the Course: The course should keep track of the teachers, name and course_number of the course.
 
 #   # Here are a few examples of books being generated
-#   math_101 = Course.new
-#   math_101.name = 'Math 101'
-#   math_101.teachers = ["Albert Einstein"]
-#   math_101.course_number = 100
 
-#   computer_science_301 = Course.new
-#   computer_science_301.name = "Intro to Computer Science"
-#   computer_science_301.teachers = ["Dr. Zeus", "Mark Zuckerberg"]
-#   computer_science_301.course_number = 300
+
 
 #   social_studies_201.name = "Intro to Social Studies"
 #   social_studies_201.teachers = ["Steve Wozniak", "Brian Stevens"]
@@ -49,6 +42,7 @@ class School
         @course_number = course_number
     end
 end
+
 class Course
     def initialize (schools)
         @schools = schools
@@ -63,5 +57,16 @@ class Course
             end
         end
     end
-end
 
+
+math_101 = Course.new
+math_101.name = 'Math 101'
+math_101.teachers = ["Albert Einstein"]
+math_101.course_number = 100
+p math_101
+computer_science_301 = Course.new
+computer_science_301.name = "Intro to Computer Science"
+computer_science_301.teachers = ["Dr. Zeus", "Mark Zuckerberg"]
+computer_science_301.course_number = 300
+
+p computer_science_301
